@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  gap: 50px;
+}
+
+:root {
+  --sketchpad-width: 500px;
+  --sketchpad-height: calc(var(--sketchpad-size) / 4 * 3);
+  --pixels-count-column: 2;
+  --pixels-count-row: calc(var(--pixels-count-column) / 4 * 3);
+}
+
+.skatchpad-border {
+  display: flex;
+  flex-direction: column;
+  background-color: #ea201e;
+  padding: 20px 100px 70px 100px;
+  border-radius: 10px;
+  border: 10px outset #f3282c;
+}
+
+.title {
+  display: flex;
+  font-size: 48px;
+  font-family: "Satisfy", sans-serif;
+  justify-content: center;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+#sketchpad {
+  width: var(--sketchpad-size);
+  height: var(--sketchpad-height);
+  border: 2px solid black;
+  background-color: #edecea;
+  display: grid;
+}
+
+.inputs {
+  font-family: sans-serif;
+}
